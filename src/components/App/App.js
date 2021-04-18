@@ -3,6 +3,7 @@ import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 import Api from '../../utils/Api';
 import { ourServerApiConfig } from '../../utils/configs';
 import Header from '../Header/Header';
+import Main from '../Main/Main';
 import './App.css';
 
 const { baseUrl } = ourServerApiConfig;
@@ -23,6 +24,7 @@ function App() {
     <CurrentUserContext.Provider value={currentUser}>
       <div className="App">
         <Header />
+        <Main />
       </div>
     </CurrentUserContext.Provider>
   );
