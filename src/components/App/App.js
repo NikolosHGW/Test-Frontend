@@ -1,24 +1,30 @@
-import logo from '../../logo.svg';
+import React from 'react';
+import { CurrentUserContext } from '../../contexts/CurrentUserContext';
+import Api from '../../utils/Api';
+import { ourServerApiConfig } from '../../utils/configs';
+import Header from '../Header/Header';
 import './App.css';
 
+const { baseUrl } = ourServerApiConfig;
+const api = new Api(baseUrl);
+
 function App() {
+  const [currentUser, setCurrentUser] = React.useState({});
+
+  React.useEffect(() => {
+    api.getData('photos?id=7')
+      .then(data => {
+        setCurrentUser(data[0]);
+      })
+      .catch(err => console.log(err));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CurrentUserContext.Provider value={currentUser}>
+      <div className="App">
+        <Header />
+      </div>
+    </CurrentUserContext.Provider>
   );
 }
 

@@ -1,0 +1,16 @@
+.ToolBar__button-open {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: opacity .4s linear;
+  cursor: pointer;
+  background-image: url('../../../../images/open.svg');
+}
+
+.ToolBar__button-open:hover {
+  opacity: .4;
+}

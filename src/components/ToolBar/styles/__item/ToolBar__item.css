@@ -1,0 +1,15 @@
+.ToolBar__item {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  width: 18px;
+  height: 18px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: opacity .4s linear;
+  cursor: pointer;
+}
+
+.ToolBar__item:hover {
+  opacity: .4;
+}
