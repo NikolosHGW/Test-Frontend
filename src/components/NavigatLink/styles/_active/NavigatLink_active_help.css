@@ -1,0 +1,9 @@
+.NavigatLink_active_help {
+  background-color: #FFFFFF;
+  color: #7761FF;
+  background-image: url('../../../../images/helpActive.svg');
+  background-repeat: no-repeat;
+  background-position: left 17.52px top 14px;
+  border-left: 2.58px solid #7761FF;
+  box-sizing: border-box;
+}

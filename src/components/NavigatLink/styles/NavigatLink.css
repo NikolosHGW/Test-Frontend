@@ -1,0 +1,14 @@
+.NavigatLink {
+  margin: 0;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: opacity .4s linear;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+}
+
+.NavigatLink:hover {
+  opacity: .4;
+}

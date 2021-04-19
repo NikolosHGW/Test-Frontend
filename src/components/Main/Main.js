@@ -1,9 +1,12 @@
 import React from 'react';
+import SideBar from '../SideBar/SideBar';
 import './styles/Main.css';
 
 function Main() {
   return (
-    <main className="Main"></main>
+    <main className="Main">
+      <SideBar />
+    </main>
   );
 }
 

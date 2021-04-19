@@ -1,0 +1,21 @@
+.SideBar__order-button {
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: opacity .4s linear;
+  align-self: center;
+  background-color: #7761FF;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.SideBar__order-button:hover {
+  opacity: .4;
+}
