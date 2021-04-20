@@ -1,0 +1,10 @@
+@import url('./RecordCard.css');
+@import url('./__date/RecordCard__date.css');
+@import url('./__adress/RecordCard__adress.css');
+@import url('./__container/RecordCard__container.css');
+@import url('./__doctor/RecordCard__doctor.css');
+@import url('./__avatar/RecordCard__avatar.css');
+@import url('./__caption/RecordCard__caption.css');
+@import url('./__name/RecordCard__name.css');
+@import url('./__spec/RecordCard__spec.css');
+@import url('./__cancel-button/RecordCard__cancel-button.css');
