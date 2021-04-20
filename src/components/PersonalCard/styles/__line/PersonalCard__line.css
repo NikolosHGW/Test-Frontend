@@ -1,0 +1,17 @@
+.PersonalCard__line {
+  list-style-type: none;
+  margin-bottom: 7px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.PersonalCard__line:before {
+  color: #EBE7FF;
+  content: "•";
+  padding-right: 11px;
+}
+
+.PersonalCard__line:last-child {
+  margin-bottom: 0;
+}

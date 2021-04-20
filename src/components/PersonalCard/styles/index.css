@@ -1,0 +1,12 @@
+@import url('./PersonalCard.css');
+@import url('./__link/PersonalCard__link.css');
+@import url('./__title/PersonalCard__title.css');
+@import url('./__list/PersonalCard__list.css');
+@import url('./__line/PersonalCard__line.css');
+@import url('./__image/PersonalCard__image.css');
+@import url('./__image/_type/PersonalCard__image_type_first.css');
+@import url('./__image/_type/PersonalCard__image_type_second.css');
+@import url('./__image/_type/PersonalCard__image_type_third.css');
+@import url('./__image/_type/PersonalCard__image_type_fourth.css');
+@import url('./__container/PersonalCard__container.css');
+@import url('./__text/PersonalCard__text.css');

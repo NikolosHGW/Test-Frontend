@@ -1,0 +1,8 @@
+.PersonalCard__title {
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  border-bottom: 2px solid #EBE7FF;
+  padding-bottom: 10px;
+}

@@ -1,3 +1,5 @@
 @import url('./PersonalArea.css');
 @import url('./__title/PersonalArea__title.css');
+@import url('./__title/_el-card/PersonalArea__title_el-card.css');
 @import url('./__record-card-container/PersonalArea__record-card-container.css');
+@import url('./__personal-cards-container/PersonalArea__personal-cards-container.css');

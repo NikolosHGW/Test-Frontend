@@ -1,0 +1,59 @@
+.PersonalCard {
+  width: 540px;
+  height: 183px;
+  box-shadow: 0px 0px 5px #EBE7FF;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.PersonalCard:hover {
+  border: 2px solid #50CAFF;
+}
+
+.PersonalCard:hover .PersonalCard__container {
+  margin-left: 34px;
+}
+
+.PersonalCard:hover .PersonalCard__image_type_first {
+  background-image: url('../../../images/firstHover.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #50CAFF;
+  position: relative;
+  right: 2px;
+}
+
+.PersonalCard:hover .PersonalCard__image_type_second {
+  background-image: url('../../../images/secondHover.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #50CAFF;
+  position: relative;
+  right: 2px;
+}
+
+.PersonalCard:hover .PersonalCard__image_type_third {
+  background-image: url('../../../images/thirdHover.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #50CAFF;
+  position: relative;
+  right: 2px;
+}
+
+.PersonalCard:hover .PersonalCard__image_type_fourth {
+  background-image: url('../../../images/fourthHover.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #50CAFF;
+  position: relative;
+  right: 2px;
+}
+
+.PersonalCard:hover .PersonalCard__title {
+  border-bottom: 2px solid #50CAFF;
+}
+
+.PersonalCard:hover .PersonalCard__line:before {
+  color: #50CAFF;
+}

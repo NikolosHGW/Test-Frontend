@@ -1,6 +1,6 @@
 .SideBar__NavigatLink {
   display: flex;
-  width: 100%;
+  width: 190px;
   position: absolute;
   bottom: 40px;
 }
