@@ -1,3 +1,4 @@
 .PersonalArea__record-card-container {
   display: flex;
+  flex-wrap: wrap;
 }

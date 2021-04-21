@@ -1,6 +1,7 @@
 export default class Api {
-  constructor(baseUrl) {
+  constructor(baseUrl, fakeData) {
     this._baseUrl = baseUrl;
+    this._fakeData = fakeData;
   }
 
   _checkResponse(res) {
@@ -13,5 +14,9 @@ export default class Api {
   getData(endPoint) {
     return fetch(`${this._baseUrl}/${endPoint}`)
       .then(this._checkResponse);
+  }
+
+  getFakeData() {
+    return Promise.resolve(this._fakeData);
   }
 }

@@ -1,21 +1,49 @@
 import React from "react";
 import RecordCard from "../RecordCard/RecordCard";
 import './styles/index.css';
-import doctor from '../../images/doctor.svg';
 import PersonalCard from "../PersonalCard/PersonalCard";
+import { RecordsContext } from "../../contexts/RecordsContext";
+import { Link } from "react-router-dom";
 
 function PersonalArea() {
+  const [currentRecords, setCurrentRecords] = React.useState([]);
+  const [otherRecords, setOtherRecords] = React.useState(0);
+  const records = React.useContext(RecordsContext);
+
+  React.useEffect(() => {
+    if (records[0]) {
+      for (let i = 0; i < 2; i++) {
+        setCurrentRecords(prev => [...prev, records[i]]);
+      }
+    }
+  }, [records]);
+
+  React.useEffect(() => {
+    setOtherRecords(records.length - currentRecords.length);
+  }, [currentRecords, records.length]);
+
   return (
     <div className="PersonalArea">
       <h2 className="PersonalArea__title">Записи на прием</h2>
       <div className="PersonalArea__record-card-container">
-        <RecordCard
-          date="Понедельник 15.06.20 | 15:30"
-          adress='СПБ ГБУЗ "Городская поликлиника №25", пр.&nbsp;Солидарности, д. 1, к. 1, лит. А'
-          avatar={doctor}
-          name="Малушко Т. Н."
-          spec="Хирургия"
-        />
+        {currentRecords[0] ? currentRecords.map(({ date, adress, avatar, name, spec }, i) => (
+          <RecordCard
+            key={i}
+            date={date}
+            adress={adress}
+            avatar={avatar}
+            name={name}
+            spec={spec}
+          />
+        )) : (
+          <p>Записей нет</p>
+        )}
+        {(otherRecords !== 0) && (
+          <div className="PersonalArea__detail">
+            <p className="PersonalArea__other-records">{`Еще ${otherRecords} записи`}</p>
+            <Link className="PersonalArea__link" to="/detail">Подробнее</Link>
+          </div>
+        )}
       </div>
       <h2 className="PersonalArea__title PersonalArea__title_el-card">Электронная карта</h2>
       <div className="PersonalArea__personal-cards-container">

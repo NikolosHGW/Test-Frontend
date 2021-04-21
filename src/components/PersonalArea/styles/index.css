@@ -3,3 +3,6 @@
 @import url('./__title/_el-card/PersonalArea__title_el-card.css');
 @import url('./__record-card-container/PersonalArea__record-card-container.css');
 @import url('./__personal-cards-container/PersonalArea__personal-cards-container.css');
+@import url('./__detail/PersonalArea__detail.css');
+@import url('./__other-records/PersonalArea__other-records.css');
+@import url('./__link/PersonalArea__link.css');

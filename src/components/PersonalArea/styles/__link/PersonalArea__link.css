@@ -1,0 +1,8 @@
+.PersonalArea__link {
+  color: #50CAFF;
+  transition: opacity .4s linear;
+}
+
+.PersonalArea__link:hover {
+  opacity: .5;
+}
