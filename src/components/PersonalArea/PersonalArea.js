@@ -41,7 +41,7 @@ function PersonalArea() {
         {(otherRecords !== 0) && (
           <div className="PersonalArea__detail">
             <p className="PersonalArea__other-records">{`Еще ${otherRecords} записи`}</p>
-            <Link className="PersonalArea__link" to="/detail">Подробнее</Link>
+            <Link className="PersonalArea__link" to="/details">Подробнее</Link>
           </div>
         )}
       </div>

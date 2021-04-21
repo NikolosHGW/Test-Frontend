@@ -1,0 +1,20 @@
+.Details__link {
+  width: 123px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-start;
+  margin: 15px 0 13px 20px;
+  background-image: url('../../../../images/back.svg');
+  background-repeat: no-repeat;
+  background-position: left 0 center;
+  transition: opacity .4s linear;
+}
+
+.Details__link:hover {
+  opacity: .5;
+}

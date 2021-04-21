@@ -1,0 +1,10 @@
+.ContainerScroll {
+  height: 100%;
+  width: 505px;
+}
+
+.ContainerScroll .RecordCard {
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-bottom: 15px;
+}
