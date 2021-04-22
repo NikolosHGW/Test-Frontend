@@ -9,10 +9,10 @@ import arrowRight from '../../images/arrowRight.svg';
 import Arrow from "../Calendar/Arrow/Arrow";
 import TileContent from "../Calendar/TileContent/TileContent";
 import { daysWeek } from "../../utils/utils";
-import { RecordsContext } from "../../contexts/RecordsContext";
+import { useSelector } from 'react-redux';
 
 function Details() {
-  const records = React.useContext(RecordsContext);
+  const { records } = useSelector(state => state.records);
 
   //Находим в массиве записей дату, которая соответствует текущему дню в календаре
   //Если нашли такую дату, то вставляем в текущий день компонент с кол-вом записей

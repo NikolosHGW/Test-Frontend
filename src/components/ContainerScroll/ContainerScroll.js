@@ -1,11 +1,11 @@
 import React from "react";
-import { RecordsContext } from "../../contexts/RecordsContext";
 import CustomScroll from "../CustomScroll/CustomScroll";
 import RecordCard from "../RecordCard/RecordCard";
 import './styles/index.css';
+import { useSelector } from 'react-redux';
 
 function ContainerScroll() {
-  const records = React.useContext(RecordsContext);
+  const { records } = useSelector(state => state.records)
 
   return (
     <div className="ContainerScroll">
@@ -18,6 +18,7 @@ function ContainerScroll() {
             avatar={avatar}
             name={name}
             spec={spec}
+            index={i}
           />
         ))}
       </CustomScroll>

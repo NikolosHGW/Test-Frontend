@@ -2,19 +2,25 @@ import React from "react";
 import RecordCard from "../RecordCard/RecordCard";
 import './styles/index.css';
 import PersonalCard from "../PersonalCard/PersonalCard";
-import { RecordsContext } from "../../contexts/RecordsContext";
 import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 function PersonalArea() {
   const [currentRecords, setCurrentRecords] = React.useState([]);
   const [otherRecords, setOtherRecords] = React.useState(0);
-  const records = React.useContext(RecordsContext);
+  const { records } = useSelector(state => state.records);
 
   React.useEffect(() => {
-    if (records[0]) {
-      for (let i = 0; i < 2; i++) {
-        setCurrentRecords(prev => [...prev, records[i]]);
-      }
+    switch (records.length) {
+      case 0:
+        setCurrentRecords(records);
+        break;
+      case 1:
+        setCurrentRecords(records);
+        break;
+      default:
+        setCurrentRecords([records[0], records[1]]);
+        break;
     }
   }, [records]);
 
@@ -34,6 +40,7 @@ function PersonalArea() {
             avatar={avatar}
             name={name}
             spec={spec}
+            index={i}
           />
         )) : (
           <p>Записей нет</p>

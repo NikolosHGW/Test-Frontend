@@ -1,7 +1,11 @@
 import React from "react";
 import './styles/index.css';
+import { useDispatch } from 'react-redux';
+import { deleteRecordsAction } from "../../redux/actions/recordsAction";
 
-function RecordCard({ date, adress, avatar, name, spec }) {
+function RecordCard({ date, adress, avatar, name, spec, index }) {
+  const dispatch = useDispatch();
+
   return (
     <div className="RecordCard">
       <h3 className="RecordCard__date">
@@ -18,7 +22,12 @@ function RecordCard({ date, adress, avatar, name, spec }) {
             <span className="RecordCard__spec">{spec}</span>
           </figcaption>
         </figure>
-        <button className="RecordCard__cancel-button">Отменить</button>
+        <button
+          className="RecordCard__cancel-button"
+          onClick={() => dispatch(deleteRecordsAction(index))}
+        >
+          Отменить
+        </button>
       </div>
     </div>
   );
