@@ -1,7 +1,7 @@
 import React from 'react';
 import Content from '../Content/Content';
 import SideBar from '../SideBar/SideBar';
-import './styles/Main.css';
+import './styles/index.css';
 
 function Main() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../Navigation/Navigation';
 import NavigatLink from '../NavigatLink/NavigatLink';
-import './styles/SideBar.css';
+import './styles/index.css';
 
 function SideBar() {
   return (

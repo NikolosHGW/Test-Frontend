@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Navigation.css';
+import './styles/index.css';
 import NavigatLink from '../NavigatLink/NavigatLink';
 
 function Navigation() {

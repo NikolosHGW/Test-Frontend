@@ -1,6 +1,6 @@
 import React from 'react';
 import { CurrentUserContext } from '../../contexts/CurrentUserContext';
-import './styles/ToolBar.css';
+import './styles/index.css';
 
 function ToolBar() {
   const { url } = React.useContext(CurrentUserContext);

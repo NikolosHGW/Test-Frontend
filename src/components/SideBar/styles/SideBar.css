@@ -1,6 +1,3 @@
-@import url('./__order-button/SideBar__order-button.css');
-@import url('./__NavigatLink/SideBar__NavigatLink.css');
-
 .SideBar {
   display: flex;
   flex-direction: column;

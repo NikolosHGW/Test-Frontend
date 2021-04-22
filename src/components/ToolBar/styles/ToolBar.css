@@ -1,12 +1,3 @@
-@import url('./__item/ToolBar__item.css');
-@import url('./__item/_type/ToolBar__item_type_search.css');
-@import url('./__item/_type/ToolBar__item_type_bell.css');
-@import url('./__item/_type/ToolBar__item_type_eye.css');
-@import url('./__profile/ToolBar__profile.css');
-@import url('./__avatar-container/ToolBar__avatar-container.css');
-@import url('./__avatar/ToolBar__avatar.css');
-@import url('./__button-open/ToolBar__button-open.css');
-
 .ToolBar {
   display: flex;
   justify-content: space-between;

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../images/logo.svg';
 import ToolBar from '../ToolBar/ToolBar';
-import './styles/Header.css';
+import './styles/index.css';
 
 function Header() {
   return (
