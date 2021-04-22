@@ -1,0 +1,11 @@
+.react-calendar__viewContainer {
+  background-color: #EBE7FF;
+  padding: 0 10px;
+}
+
+.react-calendar__viewContainer abbr {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}

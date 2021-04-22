@@ -1,0 +1,10 @@
+.TileContent {
+  display: flex;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  justify-self: flex-end;
+  align-self: flex-end;
+}

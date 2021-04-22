@@ -1,0 +1,9 @@
+.react-calendar__navigation {
+  width: 573px;
+  height: 57px;
+  background-color: #7761FF;
+  padding: 20px 198px;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}

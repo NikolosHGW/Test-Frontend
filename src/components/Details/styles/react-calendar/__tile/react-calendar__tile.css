@@ -1,0 +1,16 @@
+.react-calendar__tile {
+  display: flex;
+  flex-direction: column;
+  width: 79px;
+  height: 63px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.react-calendar__tile abbr {
+  margin: 10px 0 0 14px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}

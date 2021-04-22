@@ -1,3 +1,6 @@
 @import url('./Details.css');
 @import url('./__link/Details__link.css');
 @import url('./__container/Details__container.css');
+@import url('./__calendar/Details__calendar.css');
+@import url('./__tile/Details__tile.css');
+@import url('./__tile/_off/Details__tile_off.css');

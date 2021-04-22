@@ -1,0 +1,14 @@
+.TileContent__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 10px 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #50CAFF;
+  color: #FFFFFF;
+}
